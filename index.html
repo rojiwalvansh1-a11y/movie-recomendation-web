@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Recommendation System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Hero Section -->
+    <div class="hero-section">
+        <div class="overlay"></div>
+        <div class="container">
+            <h1 class="main-title">Movie Recommendation System</h1>
+            <p class="subtitle">Find your next favorite movie</p>
+            
+            <!-- Search Container with Filters -->
+            <div class="search-container">
+                <input type="text" id="movie-input" placeholder="Search for a movie..." class="search-box" />
+                <button id="search-btn" class="search-btn">Search</button>
+            </div>
+
+            <!-- Filters Section -->
+            <div class="filters">
+                <select id="genre-filter" class="filter-box">
+                    <option value="">Select Genre</option>
+                </select>
+
+                <select id="year-filter" class="filter-box">
+
+                    <div class="> </div>
+                    < option value="">Select Year</option>
+                </select>
+
+                <select id="rating-filter" class="filter-box">
+                    <option value="">Select Rating</option>
+                    <option value="1">1+</option>
+                    <option value="2">2+</option>
+                    <option value="3">3+</option>
+                    <option value="4">4+</option>
+                    <option value="5">5+</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+    <!-- Recommendations Section -->
+    <div id="recommendations" class="recommendations">
+        <!-- Recommended movies will be dynamically injected here -->
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>Powered by <a href="https://www.themoviedb.org/" target="_blank">TMDb</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
